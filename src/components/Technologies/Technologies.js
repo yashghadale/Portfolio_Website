@@ -1,34 +1,61 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { 
+  DiReact, DiHtml5, DiCss3, DiJsBadge, DiPython, DiGit, DiLinux, DiDatabase 
+} from 'react-icons/di';
+import { SiVscode, SiJupyter, SiFirebase } from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
-    <SectionDivider/>
-    <br/>
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionDivider />
+    <br />
+    <SectionTitle>Technical Skills</SectionTitle>
     <SectionText>
-      I've worked with a range of Technologies in the web development world to make good frontent websites.
+      I enjoy building modern web applications and working with tools and technologies that make development efficient and scalable.
     </SectionText>
+
     <List>
-      <ListItem>
-        <DiReact size="3rem"/>
+      {/* Frontend */}
+      <ListItem className="tech-item">
+        <DiReact size="3rem" className="tech-icon" />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Frontend</ListTitle>
           <ListParagraph>
-            Experience with <br/>
-            React.js
+            React.js, HTML, CSS, JavaScript
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem"/>
+
+      {/* Backend & Database */}
+      <ListItem className="tech-item">
+        <DiDatabase size="3rem" className="tech-icon" />
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Backend & Database</ListTitle>
           <ListParagraph>
-            Experience with <br/>
-            Node.js and Databases
+            Node.js, SQL, Firebase
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      {/* Languages */}
+      <ListItem className="tech-item">
+        <DiPython size="3rem" className="tech-icon" />
+        <ListContainer>
+          <ListTitle>Languages</ListTitle>
+          <ListParagraph>
+            Python, C, C++
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      {/* Tools */}
+      <ListItem className="tech-item">
+        <DiGit size="3rem" className="tech-icon" />
+        <ListContainer>
+          <ListTitle>Tools</ListTitle>
+          <ListParagraph>
+            Git, VS Code, Jupyter Notebook, Linux
           </ListParagraph>
         </ListContainer>
       </ListItem>

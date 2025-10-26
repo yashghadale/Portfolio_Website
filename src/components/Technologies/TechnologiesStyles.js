@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const ImageContainer = styled.div`
   text-align: center;
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(79, 108, 176, 0.25) 53.8%, rgba(79, 108, 176, 0) 100%);
@@ -48,6 +49,7 @@ export const List = styled.ul`
     flex-direction: column;
     margin: 32px 0;
   }
+    
 `
 
 export const ListContainer = styled.div`
