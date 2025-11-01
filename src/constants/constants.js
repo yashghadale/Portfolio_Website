@@ -1,3 +1,5 @@
+
+
 export const projects = [
  
   {
@@ -33,9 +35,11 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  {
+    year: "Dec 2024 – Jan 2025",
+    text: `
+      Worked as a Project Intern at the Indian Navy, INS Tunir, Mumbai, where I developed a real-time vision dashboard using React.js to monitor live people counts from camera feeds. I trained and validated object detection models with OpenCV and Python, integrated RESTful APIs with a SQL backend, and optimized the system for performance and scalability through clean, modular architecture.
+    `,
+  },
 ];
+

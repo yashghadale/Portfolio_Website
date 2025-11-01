@@ -7,8 +7,13 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () => (
+  
   <Section id="tech">
+    <br />
+    <br />
     <SectionDivider />
+    <br />
+    <br />
     <br />
     <SectionTitle>Technical Skills</SectionTitle>
     <SectionText>

@@ -123,14 +123,45 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // Social Icons 
 
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: white;
-border-radius: 50px;
-  padding: 8px;
-&:hover {
-    background-color: #212d45;
-    transform: scale(1.2);
-    cursor: pointer;
-    
+  transition: 0.3s ease;
+  margin: 0 1.5rem;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  /* Default icon size (desktop) */
+  svg {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
   }
-`
+
+  &:hover {
+    background-color: #212d45;
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  &:hover svg {
+    transform: scale(1.2);
+  }
+
+  /* Tablet view */
+  @media screen and (max-width: 768px) {
+    svg {
+      font-size: 2.5rem;
+    }
+    padding: 8px;
+  }
+
+  /* Mobile view */
+  @media screen and (max-width: 480px) {
+    svg {
+      font-size: 2rem;
+    }
+    padding: 6px;
+  }
+`;

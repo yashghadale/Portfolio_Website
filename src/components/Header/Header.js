@@ -25,18 +25,16 @@ const Header = () => (
       </li>
       <li>
         <Link href="#about">
-        <NavLink>About</NavLink>
+        <NavLink>Experience</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#contact">
+        <NavLink>Contact</NavLink>
         </Link>
       </li>
     </Div2>
-    <Div3>
-      <SocialIcons href="https://github.com/yashghadale">
-      <AiFillGithub size="3rem"/>
-      </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/yash-ghadale-956b051b6/">
-      <AiFillLinkedin size="3rem"/>
-      </SocialIcons>
-    </Div3>
+    
   </Container>
 );
 
