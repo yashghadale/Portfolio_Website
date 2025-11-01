@@ -11,7 +11,7 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        I’m a Frontend Engineer passionate about building modern, responsive, 
+        I’m a Software Engineer passionate about building modern, responsive, 
         and intelligent web applications. I specialize in React and JavaScript, 
         developing efficient and scalable solutions for real-time dashboards, 
         AI-based systems, and interactive digital experiences.

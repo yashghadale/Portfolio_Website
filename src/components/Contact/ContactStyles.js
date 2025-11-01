@@ -1,20 +1,178 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
+
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem;
+  min-height: 450px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto; /* centers horizontally */
+  transform: translateY(-48px);
 
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+  /* Tablet screens (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateY(-10px);
+  }
+
+  /* Medium devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    width: 100%;
+    min-height: 350px;
+    transform: translateY(-5px);
+  }
+
+  /* Small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+    min-height: 300px;
+    width: 100%;
+    transform: translateY(0); /* optional for small screens */
+  }
+`;
+
+
+export const Form = styled.form`
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+    gap: 1rem;
+  }
+`;
+
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Label = styled.label`
+   font-weight: 600;
+  font-size: 3rem; /* original font size */
+  line-height: 3.6rem; /* approximate for spacing */
+  margin-bottom: 0.5rem;
+  margin-left: 6rem;
+  width: max-content;
+  max-width: 100%;
+
+  /* Gradient text */
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional padding for hero/section spacing */
+  padding: 0;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+`;
+
+export const Input = styled.input`
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #585252ff;
+  outline: none;
+  font-size: 2rem;
+  margin-left: 6rem;
+  background-color: ${({ theme }) => theme.colors.background ||'#0f1624'};
+  color: ${({ theme }) => theme.colors.text || '#fff'};
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+`;
+
+export const TextArea = styled.textarea`
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #585252ff;
+  outline: none;
+  font-size: 2rem;
+  resize: vertical;
+  margin-left: 6rem;
+  height: 150px;
+  background-color: ${({ theme }) => theme.colors.background || '#0f1624'};
+  color: ${({ theme }) => theme.colors.text || '#fff'};
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    height: 100px;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 0.8rem 2rem;
+  background-color: #2763dbff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15rem;
+  align-self: flex-start;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: #005ac1;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-left: 6rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem;
   }
 `;
 

@@ -88,7 +88,7 @@ const Timeline = () => {
       </CarouselButton>
     ))}
   </CarouselButtons>
-  <SectionDivider />
+
 </Section>
 
   );

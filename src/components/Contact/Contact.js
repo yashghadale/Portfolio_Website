@@ -1,31 +1,37 @@
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { Container, Div1, SocialIcons } from './ContactStyles';
+import { Section, SectionText, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Container, Form, FormGroup, Label, Input, TextArea, Button } from './ContactStyles';
 
 const Contact = () => (
-  <Section nopadding id="contact">
-     <br/>
+  <Section nopadding id="contact" style={{ paddingTop: '20px' }}>
+      <SectionDivider />
+      <br/>
+      <br/>
+      
     <SectionTitle>Contact</SectionTitle>
-     
-    <Container>
-      <Div1>
-        <SocialIcons 
-          href="https://github.com/yashghadale"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
+    <SectionText>
+      Please contact me directly at <b>yashghadale511@gmail.com</b> or through this form.
+    </SectionText>
 
-        <SocialIcons 
-          href="https://www.linkedin.com/in/yash-ghadale-956b051b6/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-      </Div1>
+    <Container>
+      <Form>
+        <FormGroup>
+          <Label htmlFor="name">Name</Label>
+          <Input id="name" type="text" placeholder="Enter your name" />
+        </FormGroup>
+
+        <FormGroup>
+          <Label htmlFor="email">Email</Label>
+          <Input id="email" type="email" placeholder="Enter your email" />
+        </FormGroup>
+
+        <FormGroup>
+          <Label htmlFor="message">Message</Label>
+          <TextArea id="message" rows="5" placeholder="Enter your message" />
+        </FormGroup>
+
+        <Button type="submit">Send</Button>
+      </Form>
     </Container>
   </Section>
 );

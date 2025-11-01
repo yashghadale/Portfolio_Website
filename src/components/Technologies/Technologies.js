@@ -9,12 +9,9 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 const Technologies = () => (
   
   <Section id="tech">
-    <br />
-    <br />
-    <SectionDivider />
-    <br />
-    <br />
-    <br />
+    <br/>
+    <SectionDivider/>
+    <br/><br/><br/>
     <SectionTitle>Technical Skills</SectionTitle>
     <SectionText>
       I enjoy building modern web applications and working with tools and technologies that make development efficient and scalable.
@@ -27,7 +24,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Frontend</ListTitle>
           <ListParagraph>
-            React.js, HTML, CSS, JavaScript
+            React.js, HTML5, CSS3, JavaScript
           </ListParagraph>
         </ListContainer>
       </ListItem>
